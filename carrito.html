@@ -11,22 +11,24 @@
 </head>
 <body>
 
+    <!-- Contenedor principal -->
     <div class="wrapper">
         <header class="header-mobile">
             <h1 class="logo">ScoutShop</h1>
             <button class="open-menu" id="open-menu">
-                <i class="bi bi-list"></i>
+                <i class="bi bi-list"></i> <!-- Icono para abrir el menú -->
             </button>
         </header>
         <aside>
             <button class="close-menu" id="close-menu">
-                <i class="bi bi-x"></i>
+                <i class="bi bi-x"></i> <!-- Icono para cerrar el menú -->
             </button>
             <header>
                 <h1 class="logo">ScoutShop</h1>
             </header>
             <nav>
                 <ul>
+                    <!-- Opciones de navegación del menú -->
                     <li>
                         <a class="boton-menu boton-volver" href="./index.html">
                             <i class="bi bi-arrow-return-left"></i> Seguir comprando
@@ -44,12 +46,13 @@
             </footer>
         </aside>
         <main>
+            <!-- Contenido principal -->
             <h2 class="titulo-principal">Carrito</h2>
             <div class="contenedor-carrito">
                 <p id="carrito-vacio" class="carrito-vacio">Tu carrito está vacío. <i class="bi bi-emoji-frown"></i></p>
 
                 <div id="carrito-productos" class="carrito-productos disabled">
-                    <!-- Esto se va a completar con el JS -->
+                    <!-- Aquí se mostrarán los productos en el carrito (se completará con JavaScript) -->
                 </div>
 
                 <div id="carrito-acciones" class="carrito-acciones disabled">
@@ -59,21 +62,21 @@
                     <div class="carrito-acciones-derecha">
                         <div class="carrito-acciones-total">
                             <p>Total:</p>
-                            <p id="total">$3000</p>
+                            <p id="total">$3000</p> <!-- Se actualizará con el total real del carrito -->
                         </div>
                         <button id="carrito-acciones-comprar" class="carrito-acciones-comprar">Comprar ahora</button>
                     </div>
                 </div>
 
                 <p id="carrito-comprado" class="carrito-comprado disabled">Muchas gracias por tu compra. <i class="bi bi-emoji-laughing"></i></p>
-
             </div>
         </main>
     </div>
     
+    <!-- Inclusión de scripts externos -->
     <script type="text/javascript" src="https://cdn.jsdelivr.net/npm/toastify-js"></script>
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
-    <script src="./js/carrito.js"></script>
-    <script src="./js/main.js"></script>
+    <script src="./js/carrito.js"></script> <!-- Archivo JavaScript para la funcionalidad del carrito -->
+    <script src="./js/main.js"></script> <!-- Archivo JavaScript principal de la página -->
 </body>
 </html>
