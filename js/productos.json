@@ -2,7 +2,7 @@
     {
         "id": "Camisa Talle 10",
         "titulo": "Camisa Talle 10",
-        "imagen": "./img/abrigos/01.jpg",
+        "imagen": "./img/camisa-unisex.png",
         "categoria": {
             "nombre": "Camisas",
             "id": "camisa"
@@ -12,7 +12,7 @@
     {
         "id": "Camisa Talle 12",
         "titulo": "Camisa Talle 10",
-        "imagen": "./img/abrigos/02.jpg",
+        "imagen": "./img/camisa-unisex.png",
         "categoria": {
             "nombre": "Camisas",
             "id": "camisa"
@@ -22,7 +22,7 @@
     {
         "id": "Camisa Talle S-L",
         "titulo": "Camisa Talle S-L",
-        "imagen": "./img/abrigos/03.jpg",
+        "imagen": "./img/camisa-unisex.png",
         "categoria": {
             "nombre": "Camisas",
             "id": "camisa"
@@ -32,7 +32,7 @@
     {
         "id": "Camisa Talle XL-XXXL",
         "titulo": "Camisa Talle XL-XXXL",
-        "imagen": "./img/abrigos/04.jpg",
+        "imagen": "./img/camisa-unisex.png",
         "categoria": {
             "nombre": "Camisas",
             "id": "camisa"
@@ -42,7 +42,7 @@
     {
         "id": "Pañuelo",
         "titulo": "Pañuelo",
-        "imagen": "./img/abrigos/05.jpg",
+        "imagen": "./img/Pañuelo.png",
         "categoria": {
             "nombre": "Pañuelos",
             "id": "pañuelos"
@@ -52,7 +52,7 @@
     {
         "id": "Pasa Pañuelo",
         "titulo": "Pasa Pañuelo",
-        "imagen": "./img/abrigos/05.jpg",
+        "imagen": "./img/PasaPañuelos.png",
         "categoria": {
             "nombre": "Pasa Pañuelos",
             "id": "pañuelos"
@@ -61,58 +61,38 @@
     },
     {
         "id": "Insiginas",
+        "titulo": "Insignia Scout Argentina",
+        "imagen": "./img/Flor-de-lis-nacional.png",
+        "categoria": {
+            "nombre": "Insignias",
+            "id": "insignias"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "Insiginas",
+        "titulo": "Insignia Campamento",
+        "imagen": "./img/1escudo campamento anual 2023.jpg",
+        "categoria": {
+            "nombre": "Insignias",
+            "id": "insignias"
+        },
+        "precio": 1000
+    },
+    {
+        "id": "Insiginas",
         "titulo": "Insignia Paravachasca",
-        "imagen": "./img/camisetas/02.jpg",
+        "imagen": "./img/Paravachasca.png",
         "categoria": {
             "nombre": "Insignias",
             "id": "insignias"
         },
         "precio": 1000
     },
-    {
-        "id": "Insiginas",
-        "titulo": "Insignia Verano",
-        "imagen": "./img/camisetas/02.jpg",
-        "categoria": {
-            "nombre": "Insignias",
-            "id": "insignias"
-        },
-        "precio": 1000
-    },
-    {
-        "id": "Insiginas",
-        "titulo": "Insignia Invierno",
-        "imagen": "./img/camisetas/02.jpg",
-        "categoria": {
-            "nombre": "Insignias",
-            "id": "insignias"
-        },
-        "precio": 1000
-    },
-    {
-        "id": "Insiginas",
-        "titulo": "Insignia Otoño",
-        "imagen": "./img/camisetas/02.jpg",
-        "categoria": {
-            "nombre": "Insignias",
-            "id": "insignias"
-        },
-        "precio": 1000
-    },
-    {
-        "id": "Insiginas",
-        "titulo": "Insignia Primavera",
-        "imagen": "./img/camisetas/02.jpg",
-        "categoria": {
-            "nombre": "Insignias",
-            "id": "insignias"
-        },
-        "precio": 1000
-    },
-    {
+      {
         "id": "Insiginas",
         "titulo": "Insignia Progresión",
-        "imagen": "./img/camisetas/02.jpg",
+        "imagen": "./img/Progresiones.png",
         "categoria": {
             "nombre": "Insignias",
             "id": "insignias"
@@ -122,7 +102,7 @@
     {
         "id": "Insiginas",
         "titulo": "Insignias Rama",
-        "imagen": "./img/camisetas/02.jpg",
+        "imagen": "./img/Pertenencia-Rama.png",
         "categoria": {
             "nombre": "Insignias",
             "id": "insignias"
@@ -132,7 +112,7 @@
     {
         "id": "Insiginas",
         "titulo": "Insignias Flor de Lis",
-        "imagen": "./img/camisetas/02.jpg",
+        "imagen": "./img/Flor-de-lis-internacional.png",
         "categoria": {
             "nombre": "Insignias",
             "id": "insignias"
