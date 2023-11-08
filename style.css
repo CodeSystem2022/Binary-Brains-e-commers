@@ -2,10 +2,10 @@
 
 :root {
     --clr-main: #4f1f96;
-    --clr-main-light: rgb(232, 230, 237);
-    --clr-white: #f3f3f3;
-    --clr-gray: #3e3b3b;
-    --clr-red: #f20885;
+    --clr-main-light: rgb(232, 249, 249);
+    --clr-white: rgb(194, 248, 248);
+    --clr-gray: rgb(194, 248, 248);
+    --clr-red: #f70434;
 }
 
 * {
@@ -138,7 +138,7 @@ main {
 }
 
 .titulo-principal {
-    color: var(--clr-main);
+    color: var(--clr-white);
     margin-bottom: 2rem;
 }
 
@@ -197,7 +197,7 @@ main {
 
 .carrito-vacio,
 .carrito-comprado {
-    color: var(--clr-main);
+    color: var(--clr-white);
 }
 
 .carrito-productos {
@@ -289,7 +289,7 @@ main {
 /*** MEDIA QUERIES ***/
 
 main{
-    background: linear-gradient(237deg, #3b0579, rgb(66, 208, 218));
+    background: linear-gradient(237deg, #8b39d7, #65f1ee );
     background-size: 400% 400%;
 
     -webkit-animation: AnimationName 10s ease infinite;
@@ -341,7 +341,7 @@ main{
         z-index: 9;
         background-color: var(--clr-main);
         left: 0;
-        box-shadow: 0 0 0 100vmax rgba(0, 0, 0, .75);
+        box-shadow: rgba(0, 0, 0, 100vmax, rgba(0, 0, 0, .75));
         transform: translateX(-100%);
         opacity: 0;
         visibility: hidden;
