@@ -11,7 +11,7 @@
     },
     {
         "id": "Camisa Talle 12",
-        "titulo": "Camisa Talle 10",
+        "titulo": "Camisa Talle 12",
         "imagen": "./img/camisa-unisex.png",
         "categoria": {
             "nombre": "Camisas",
