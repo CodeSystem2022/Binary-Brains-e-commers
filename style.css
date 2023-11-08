@@ -1,11 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500;600;700;800;900&display=swap');
 
 :root {
-    --clr-main: #185a5f;
-    --clr-main-light: #9c989c;
+    --clr-main: #1f8e96;
+    --clr-main-light: #989c99;
     --clr-white: #f3f3f3;
     --clr-gray: #e2e2e2;
-    --clr-red: #187496;
+    --clr-red: #188196;
 }
 
 * {
@@ -289,7 +289,7 @@ main {
 /*** MEDIA QUERIES ***/
 
 main{
-    background: linear-gradient(237deg, #098624, #29a1d1);
+    background: linear-gradient(237deg, #05796f, #29c6d1);
     background-size: 400% 400%;
 
     -webkit-animation: AnimationName 10s ease infinite;
