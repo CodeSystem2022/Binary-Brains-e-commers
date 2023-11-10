@@ -218,10 +218,11 @@ main {
 }
 
 .carrito-producto-imagen {
-    width: 4rem;
+    max-width: 100%;
+    width: auto;
+    max-height: 100px; /* Ajusta la altura según tus necesidades */
     border-radius: 1rem;
 }
-
 .carrito-producto small {
     font-size: .75rem;
 }
