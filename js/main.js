@@ -1,3 +1,8 @@
+import app from './app';
+
+
+
+
 // Inicializar un array vacío para almacenar los productos
 let productos = [];
 
