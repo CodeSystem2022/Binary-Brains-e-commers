@@ -46,6 +46,12 @@ aside {
     justify-content: space-between;
 }
 
+.contenedor-productos img {
+    max-height: 150px; /* Ajusta la altura según tus necesidades */
+    display: block; /* Para centrar verticalmente las imágenes */
+    margin: 0 auto; /* Para centrar horizontalmente las imágenes */
+}
+
 .logo {
     font-weight: 400;
     font-size: 1.3rem;

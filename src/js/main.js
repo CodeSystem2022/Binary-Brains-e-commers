@@ -89,7 +89,6 @@ if (productosEnCarritoLS) {
 } else {
     productosEnCarrito = [];
 }
-
 // Función para agregar un producto al carrito
 function agregarAlCarrito(e) {
     // Mostrar una notificación de producto agregado
@@ -140,4 +139,4 @@ function actualizarNumerito() {
     numerito.innerText = nuevoNumerito;
 }
 
-main();
+// main();
