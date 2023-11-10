@@ -21,6 +21,8 @@ app.get('/', function(req, res) {
 });
 
 
-app.get('/', function(req, res) {
+app.get('/ping', async function(req, res) {
+    const resultado = await pool.query('SELECT NOW()')
+    res.json(resultado[0])
 
 });
