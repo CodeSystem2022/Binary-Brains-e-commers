@@ -1,8 +1,3 @@
-import app from './app';
-
-
-
-
 // Inicializar un array vacío para almacenar los productos
 let productos = [];
 
@@ -144,3 +139,5 @@ function actualizarNumerito() {
     let nuevoNumerito = productosEnCarrito.reduce((acc, producto) => acc + producto.cantidad, 0);
     numerito.innerText = nuevoNumerito;
 }
+
+main();

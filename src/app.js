@@ -1,20 +1,9 @@
-import express from 'express';
-import morgan from 'morgan';
+import app from "./app";
 
-const app = express();
+const main = () => {
+    app.listen(app.get("port"),);
+    console.log('Listening on port ' + app.get('port'));
 
-// Settings 
-app.set("port", 3000);
+}
 
-
-// Puerto
-
-
-// Middleware
-app.use(morgan("dev"));
-
-// Para que el programa use JSON
-app.use(json());
-
-
-export default app;
+main();
