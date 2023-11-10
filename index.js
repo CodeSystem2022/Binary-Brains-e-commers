@@ -9,11 +9,15 @@ app.listen(puerto, function() {
     console.log(`Aplicacion iniciada en el puerto ${puerto}`);
 })
 
+// Archivos estaticos
+app.use(express.static('./css'))
+app.use(express.static('./src'))
+app.use(express.static('./views'))
 
 
 // Rutas
 app.get('/', function(req, res) {
-    res.send('aplicacion iniciada')
+    res.render('index');
 });
 
 
