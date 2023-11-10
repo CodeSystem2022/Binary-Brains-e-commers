@@ -422,37 +422,3 @@ main{
         grid-template-columns: 1fr;
     }
 }
-
-/* Agrega estilos específicos para el formulario de registro */
-.campo {
-    margin-bottom: 15px;
-  }
-  
-  .campo input {
-    width: 100%;
-    padding: 10px;
-    border: 1px solid #ccc;
-    border-radius: 5px;
-    font-size: 16px;
-  }
-  
-  .campo label {
-    display: block;
-    font-size: 14px;
-    margin-bottom: 5px;
-  }
-  
-  input[type="submit"], input[type="reset"] {
-    background-color: #4f1f96;
-    color: #fff;
-    padding: 10px 20px;
-    border: none;
-    border-radius: 5px;
-    font-size: 16px;
-    cursor: pointer;
-  }
-  
-  input[type="submit"]:hover, input[type="reset"]:hover {
-    background-color: #2d1358;
-  }
-  
