@@ -1,4 +1,7 @@
 import express from 'express'; // Importamos express
+import conectar from './src/database/database.js';
+// import { createPool } from 'mysql2/promise';
+// import conectar from './src/database/database.js';
 
 // Inicializamos express
 const app = express();
@@ -12,18 +15,25 @@ app.use(express.static('./views'))
 
 
 // Rutas
-app.get('/', function(req, res) {
-    res.render('index');
+app.get('/', async function(req, res) {
+    try{
+        conectar();
+        res.render('index');
+    } catch(err){
+        console.log(err.message)
+    }
+    
 });
 
 
-app.get('/ping', async function(req, res) {
-    const resultado = await pool.query('SELECT NOW()')
-    res.json(resultado[0])
+// app.get('/ping', async function(req, res){
+//     const result = await pool.query('SELECT NOW()');
+//     res.send(result[0]);
+// })
 
-});
 
 // Iniciamos servidor
 app.listen(puerto, function() {
     console.log(`Aplicacion iniciada en el puerto ${puerto}`);
 })
+
