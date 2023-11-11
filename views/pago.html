@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <title>Registro y Pago</title>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css">
+    <link rel="stylesheet" href="./pago.css">
+</head>
+
+<body>
+    <div class="contenedor-formulario">
+        <h1>Registro y Pago</h1>
+        <form id="registroForm" action="#" method="post">
+            <!-- Campos de información personal -->
+            <div class="campo">
+                <label for="nombre">Nombre</label>
+                <input type="text" id="nombre" name="nombre" class="form-control" required>
+            </div>
+            <div class="campo">
+                <label for="apellido">Apellido</label>
+                <input type="text" id="apellido" name="apellido" class="form-control" required>
+            </div>
+            <div class="campo">
+                <label for="correo">Correo electrónico</label>
+                <input type="email" id="correo" name="correo" class="form-control" required>
+            </div>
+            <div class="campo">
+                <label for="telefono">Número de celular</label>
+                <input type="tel" id="telefono" name="telefono" class="form-control" required>
+            </div>
+
+            <!-- Campos de información de pago -->
+            <h2>Información de Pago</h2>
+            <div class="campo">
+                <label for="tarjeta">Número de Tarjeta</label>
+                <input type="text" id="tarjeta" name="tarjeta" class="form-control" required>
+            </div>
+            <div class="campo">
+                <label for="titular">Titular de la Tarjeta</label>
+                <input type="text" id="titular" name="titular" class="form-control" required>
+            </div>
+            <div class="campo">
+                <label for="fecha">Fecha de Expiración (MM/AA)</label>
+                <input type="text" id="fecha" name="fecha" class="form-control" placeholder="MM/AA" required>
+            </div>
+            <div class="campo">
+                <label for="cvv">Código de Seguridad (CVV)</label>
+                <input type="text" id="cvv" name="cvv" class="form-control" required>
+            </div>
+
+            <!-- Logos de tarjetas -->
+            <div class="logos-tarjetas">
+                <img src="static/img/visa.png" alt="Visa">
+                <img src="static/img/mastercard.png" alt="Mastercard">
+                <img src="static/img/american.png" alt="American Express">
+            </div>
+
+            <div class="text-center">
+                <button type="button" onclick="simularPago()" class="btn btn-primary" id="carrito-acciones-comprar">Comprar ahora</button>
+            </div>
+        </form>
+    </div>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+    <script>
+        function simularPago() {
+            // Validación básica de los campos de pago
+            var tarjeta = document.getElementById('tarjeta').value;
+            var titular = document.getElementById('titular').value;
+            var fecha = document.getElementById('fecha').value;
+            var cvv = document.getElementById('cvv').value;
+
+            if (!tarjeta || !titular || !fecha || !cvv) {
+                alert('Por favor, complete todos los campos de pago.');
+                return;
+            }
+
+            // Validación de la fecha de expiración (formato MM/AA)
+            var expiracion = fecha.split('/');
+            var expiracionMes = parseInt(expiracion[0], 10);
+            var expiracionAnio = parseInt(expiracion[1], 10);
+
+            var today = new Date();
+            var currentYear = today.getFullYear() % 100; // Solo últimos dos dígitos del año
+            var currentMonth = today.getMonth() + 1; // Meses en JavaScript son de 0 a 11
+
+            if (expiracionAnio < currentYear || (expiracionAnio === currentYear && expiracionMes < currentMonth)) {
+                alert('La tarjeta ha expirado. Por favor, ingrese una tarjeta válida.');
+                return;
+            }
+
+            // Validación del CVV
+            if (cvv.length !== 3) {
+                alert('El CVV debe tener 3 dígitos. Por favor, ingrese un CVV válido.');
+                return;
+            }
+
+            // Simulación de pago (aquí es donde normalmente se conectaría a un servicio de pago real)
+            var exitoso = Math.random() < 0.8; // Simula una tasa de éxito del 80%
+
+            if (exitoso) {
+                alert('Compra exitosa. ¡Gracias por su compra!');
+                // Redirigir a la página de pago.html
+                window.location.href = 'pago.html';
+            } else {
+                alert('Error en el pago. Por favor, intente de nuevo.');
+            }
+        }
+    </script>
+</body>
+</html>
