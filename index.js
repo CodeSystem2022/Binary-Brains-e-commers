@@ -7,10 +7,6 @@ import conectar from './src/database/database.js';
 const app = express();
 const puerto = 4000
 
-// Iniciamos servidor
-app.listen(puerto, function() {
-    console.log(`Aplicacion iniciada en el puerto ${puerto}`);
-})
 
 // Archivos estaticos
 app.use(express.static('./css'))
@@ -34,4 +30,10 @@ app.get('/', async function(req, res) {
 //     const result = await pool.query('SELECT NOW()');
 //     res.send(result[0]);
 // })
+
+
+// Iniciamos servidor
+app.listen(puerto, function() {
+    console.log(`Aplicacion iniciada en el puerto ${puerto}`);
+})
 
